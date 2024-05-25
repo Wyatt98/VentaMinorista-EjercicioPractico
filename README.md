@@ -2,13 +2,13 @@
 Ejercicio práctico para el bootcamp de Autozone Java SE 17
 
 <br>
-## Objetivo
+# Objetivo
 <br>
 
 Aplicar conceptos de programación orientada a objetos, como encapsulación, herencia, polimorfismo y abstracción, así como el uso de enumeraciones, registros, anotaciones y estructuras de control de flujo en Java. Los estudiantes deberán construir un sistema básico para gestionar el inventario de una empresa de venta minorista.
 
 <br>
-## Requisitos técnicos
+# Requisitos técnicos
 <br>
 
 1. Enumeraciones
@@ -31,7 +31,7 @@ Aplicar conceptos de programación orientada a objetos, como encapsulación, her
     - Implementar una simple interfaz de línea de comandos para permitir al usuario buscar productos según criterios específicos.
 
 <br>
-## Funcionalidades específicas
+# Funcionalidades específicas
 <br>
 1. Mostrar Todos los Productos
     - Crear un método en la clase inventario que itere sobre la lista de productos y llame al método mostrarDetalles de cada producto.
