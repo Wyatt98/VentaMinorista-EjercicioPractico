@@ -1,0 +1,6 @@
+package com.ventaminorista.enums;
+
+public enum CategoriaProducto {
+	ENTRETENIMIENTO, COMPUTADOR, ACCESORIOS, ALMACENAMIENTO, MUJER, HOMBRE, NINOS, INFANTES, FRUTAS, VERDURAS, ENLATADOS, LACTEOS
+
+}
