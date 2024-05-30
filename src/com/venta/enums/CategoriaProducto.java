@@ -1,0 +1,11 @@
+package com.venta.enums;
+
+public enum CategoriaProducto {
+	SALUD_E_HIGIENE,
+	CARNES,
+	FRUTAS_VERDURAS,
+	BEBIDAS,
+	LIMPIEZA,
+	CEREALES_LEGUMBRES,
+	ELECTRODOMESTICOS
+}
