@@ -4,7 +4,7 @@ import com.venta.enums.CategoriaProducto;
 
 public class Ropa extends Producto {
 
-	public Ropa(String nombre, float precio) {
+	public Ropa(String nombre, double precio) {
 		super(nombre, precio, CategoriaProducto.ROPA);
 		// TODO Auto-generated constructor stub
 	}

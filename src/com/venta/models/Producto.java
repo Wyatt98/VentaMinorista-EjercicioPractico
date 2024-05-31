@@ -1,17 +1,31 @@
 package com.venta.models;
 
+import java.text.NumberFormat;
+
 import com.venta.enums.CategoriaProducto;
 
 public abstract class Producto {
 	
 	private String nombre;
-	private float precio;
+	private double precio;
 	private CategoriaProducto categoria;
 	
-	public Producto(String nombre, float precio, CategoriaProducto categoria) {
+	public Producto(String nombre, double precio, CategoriaProducto categoria) {
 		this.nombre = nombre;
 		this.precio = precio;
-		this.setCategoria(categoria);
+		this.categoria = categoria;
+	}
+	
+	public void mostrarProducto() {
+		// Darle al precio formato de moneda
+		NumberFormat cFormatter = NumberFormat.getCurrencyInstance();
+		StringBuilder detalles = new StringBuilder();
+		
+		detalles.append("Producto: " + nombre + ", Precio: " + cFormatter.format(precio));
+		detalles.append("\nCategoría: " + categoria);
+		
+		System.out.println(detalles.toString() + "\n");
+		
 	}
 
 	public String getNombre() {
@@ -22,7 +36,7 @@ public abstract class Producto {
 		this.nombre = nombre;
 	}
 
-	public float getPrecio() {
+	public double getPrecio() {
 		return precio;
 	}
 
