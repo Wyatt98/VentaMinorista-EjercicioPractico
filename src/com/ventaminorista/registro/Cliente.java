@@ -1,5 +1,5 @@
 package com.ventaminorista.registro;
 
-public record Cliente() {
+public record Cliente(String nombre, String direccion, String telefono) {
 
 }
