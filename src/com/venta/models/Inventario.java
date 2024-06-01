@@ -8,6 +8,7 @@ import com.venta.enums.CategoriaProducto;
 public class Inventario {
 	
 	private List<Producto> listaProductos = new ArrayList<Producto>();
+	private static int totalProductos = 0;
 
 	public Inventario() {
 		// TODO Auto-generated constructor stub
@@ -19,6 +20,7 @@ public class Inventario {
 
 	public void addProducto(Producto p) {
 		listaProductos.add(p);
+		totalProductos++;
 	}
 	
 	public void mostrarTodosLosProductos() {
@@ -39,6 +41,10 @@ public class Inventario {
 			if ((producto.getPrecio() <= superior) && (producto.getPrecio() >= inferior) )
 				producto.mostrarProducto();
 		}
+	}
+
+	public static int getTotalProductos() {
+		return totalProductos;
 	}
 	
 	
