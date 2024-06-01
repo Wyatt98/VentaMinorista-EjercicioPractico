@@ -3,13 +3,13 @@ package com.proyecto.models;
 import com.proyecto.enums.CategoriaProducto;
 
 public abstract class Producto {
-	
+
 	private String nombre;
-	private float precio; 
+	private double precio; 
 	private CategoriaProducto categoria;
 	private String marca;
 	
-	public Producto(String nombre, float precio, CategoriaProducto categoria, String marca) {
+	public Producto(String nombre, double precio, CategoriaProducto categoria, String marca) {
 		this.nombre = nombre;
 		this.precio = precio;
 		this.categoria = categoria;
@@ -25,11 +25,11 @@ public abstract class Producto {
 		this.nombre = nombre;
 	}
 
-	public float getPrecio() {
+	public double getPrecio() {
 		return precio;
 	}
 
-	public void setPrecio(float precio) {
+	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
 
@@ -51,4 +51,5 @@ public abstract class Producto {
 	
 	public abstract void mostrarDetalleProducto();
 
+	
 }
