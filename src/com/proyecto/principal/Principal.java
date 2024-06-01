@@ -1,9 +1,12 @@
 package com.proyecto.principal;
 import java.util.Scanner;
+
+import com.proyecto.anotaciones.Revisar;
 import com.proyecto.enums.CategoriaProducto;
 import com.proyecto.models.Alimentos;
 import com.proyecto.models.Electronica;
 import com.proyecto.models.Inventario;
+import com.proyecto.models.Producto;
 import com.proyecto.models.Ropa;
 import com.proyecto.registros.Cliente;
 
@@ -47,6 +50,15 @@ public class Principal {
 
 		System.out.println("\n");
 		System.out.println("Total de Productos: " + Inventario.getTotalProductos());
+		
+		System.out.println("\n");
+		
+		for(var metodo: Producto.class.getDeclaredMethods()) {
+			if(metodo.isAnnotationPresent(Revisar.class)) {
+				Revisar revisar = metodo.getAnnotation(Revisar.class);
+				System.out.println("Metodo: "+metodo.getName()+", Anotacion: "+revisar.value());
+			}
+		}
 
 	}
 

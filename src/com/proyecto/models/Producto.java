@@ -1,5 +1,6 @@
 package com.proyecto.models;
 
+import com.proyecto.anotaciones.Revisar;
 import com.proyecto.enums.CategoriaProducto;
 
 public abstract class Producto {
@@ -51,5 +52,8 @@ public abstract class Producto {
 	
 	public abstract void mostrarDetalleProducto();
 
-	
+	@Revisar("Revision de seguridad")
+	public void revisarProducto() {
+		System.out.println("Revisando el producto "+nombre+" "+marca);
+	}
 }
