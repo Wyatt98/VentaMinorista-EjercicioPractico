@@ -4,5 +4,5 @@
 /**
  * 
  */
-module TiendaMinorista {
+module VentaMinorista {
 }
